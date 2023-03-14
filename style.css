@@ -1,0 +1,330 @@
+    :root {
+        --grayscale : #2e2d2d;
+        --dark : #252323;
+        --semigray : #505050;
+        --semiblue : #0066FF;
+    }
+
+    body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .navbar {
+        background: white;
+        height: 85px;
+        display: flex;
+        padding: 0 10%;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 4px 0 rgba(1, 1, 1, 0.1);
+    }
+    .navbar > h1 {
+        font-size: 20px;
+        font-weight: bolder;
+
+    }
+
+    .nav-menu {
+        display: flex;
+        gap: 30px;
+    } 
+
+    .hero-container {
+        display: flex;
+        height: 400px;
+        padding: 0 10%;
+    }
+
+    .hero-container h1{
+        font-size: 50px;
+        width: 300px;
+        margin: 20px 0;
+    }
+
+    .hero-container p{
+        font-size: 20px;
+        color: var(--grayscale) ;
+        
+        
+    }
+
+    .hero-container > img {
+        width: 50%;
+        height: 350px;
+        align-self: center;
+    }
+
+    .hero-container > div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .second-container{
+        height: 300px;
+        margin: 120px 0;
+        padding: 0 10%;
+        display: flex;
+        
+
+    }
+
+    .second-container > div {
+        padding: 20px;
+        width: 60%;
+        height: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 4px 4px 4px 4px rgba(1, 1, 1, 0.1);
+    }
+
+    .second-container > div > div> h2 {
+        color: var(--dark);
+    }
+
+    .second-container > div > div> p {
+        color: var(--semigray);
+    }
+
+    .second-container > div > div {
+        width: 500px;
+    }
+
+    .second-container > img {
+        width: 40%;
+        height: 290px;
+    }
+
+    .third-container {
+        height: 270px;
+        margin: 10% 0;
+        padding: 0 10%;
+        display: flex;
+
+    }
+
+    .third-container > div {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-container > img {
+        width: 40%;
+    }
+
+    .third-container > div > h2 {
+        color:  var(--dark);
+    }
+
+    .third-container > div > p {
+        color: var(--semigray);
+    }
+
+    .content-container {
+        height: 400px;
+        background: white;
+        margin: 40px 0;
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+    }
+
+    .card{
+        transition: 0.3s;
+        box-shadow: 2px 8px 8px 0 rgba(1, 1, 1, 0.1);
+    }
+
+    .card:hover{
+        box-shadow: 2px 8px 8px 0 rgba(1, 1, 1, 0.4);
+        cursor: pointer;
+    }
+
+    .content-container .card{
+        height: 100%;
+        
+    }
+
+    .card > img {
+        height: 200px;
+        width: 180px;
+    }
+
+    .card > .card-content{
+        padding: 20px;
+    }
+
+
+    .card h3 {
+        font-size: 20px;
+        margin: 0 15px 0 0;
+    }
+
+    .card p {
+        color: var(--semigray);
+        font-size: 16px;
+    }
+    .card > .card-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;  
+    }
+    .new-container{
+        height: 440px;
+        margin: 90px 0;
+        padding: 0 10%;
+        
+    }
+    .new-container > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .new-container > div > div {
+        width: 60%;
+        margin: 40px 0;
+        padding:  0 10%;
+       
+    }
+    .new-container > div > img {
+        width: 40%;
+    }
+    .new-container  p {
+        color:  var(--semigray);
+        font-size: 16px;
+    }
+    .new-card >.new-card-content:hover{
+        box-shadow: 2px 8px 4px 0 rgba(1, 1, 1, 0.5);
+        cursor: pointer;
+
+    }
+    .new-card > p {
+        margin: 0 15px 0 0;
+    }
+
+    .new-card > .new-card-content {
+        transition: 0.3;
+        padding: 20px;
+        box-shadow: 2px 8px 4px 0 rgba(1, 1, 1, 0.3);
+    }
+
+
+
+    .button {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 10%;
+        margin: 40px 0;
+    }
+
+    .btn {
+        background: var(--semiblue);
+        outline: none;
+        border: none;
+        padding: 10px 10px;
+        min-width: 60px;
+        color: white;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--semigray);
+        font-size: 10px;
+        font-style: italic;
+    }
+    @media (max-width: 400px) {
+        .navbar > h1 {
+            flex-wrap: wrap;
+        }
+        .hero-container > h1 {
+          flex-wrap: wrap;
+
+        }
+        .hero-container >p {
+          flex-wrap: wrap;
+
+        }
+        .hero-container {
+          flex-wrap: wrap;
+
+        }
+        .hero-container > div {
+            width: 100%;
+        }
+        .hero-container > img {
+            width: 100%;
+        }
+        .content-container{
+            grid-template-columns: 1fr;
+        }
+        .second-container {
+            flex-wrap: wrap;
+            height: 100%;
+
+        }
+        .second-container > div {
+            width: 100%;
+        }
+        .second-container > div > div {
+            width: 100%;
+        }
+        .second-container > img {
+            width: 100%;
+        }
+
+        .third-container {
+            flex-wrap: wrap;
+            height: 100%;
+
+        }
+        .third-container > div {
+            width: 100%;
+        }
+        .third-container > div > div {
+            width: 100%;
+        }
+        .third-container > img {
+            width: 100%;
+        }
+        
+        .new-container {
+            flex-wrap: wrap;
+            height: 100%;
+            margin-top: 1245px;
+       }
+       .new-container > div > div {
+        flex-wrap: wrap;
+       }
+      .second-container {
+        flex-wrap: wrap;
+        height: 100%;
+        grid-template-columns: 1fr;
+
+      }
+      .new-container > div {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+      .new-container > div > div {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+     .new-container > div > img {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    }
